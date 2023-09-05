@@ -23,7 +23,8 @@ export const register = async (req, res) => {
 
         res.cookie('token', token, {
             domain: '.localhost',
-            sameSite: 'none'
+            sameSite: 'none',
+            secure: true
         });
         res.json({
             id: userSaved._id,
@@ -56,7 +57,8 @@ export const login = async (req, res) => {
 
         res.cookie('token', token, {
             domain: '.localhost',
-            sameSite: 'none'
+            sameSite: 'none',
+            secure: true
         });
         res.json({
             id: userFound._id,
