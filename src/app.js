@@ -11,7 +11,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'taskfront-455b1.web.app',
   credentials: true,
 }));
 
