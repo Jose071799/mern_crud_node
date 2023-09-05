@@ -10,9 +10,7 @@ import tasksRoutes from "./routes/tasks.routes.js"
 const app = express();
 
 
-app.use(cors(
-
-));
+app.use(cors());
 
 app.use(morgan('dev'));
 app.use(express.json());
