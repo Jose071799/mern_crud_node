@@ -11,7 +11,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: 'https://taskfront-455b1.web.app',
+  origin: 'https://webiz.se',
   credentials: true,
 }));
 
